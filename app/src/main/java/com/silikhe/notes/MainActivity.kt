@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 //        var num = 0
 
-//        binding.fab.setOnClickListener { view ->
+//        fab.setOnClickListener { view ->
 //
 //             num++
 //            Snackbar.make(view, "Replace with your own action $num", Snackbar.LENGTH_LONG)
@@ -46,7 +46,10 @@ class MainActivity : AppCompatActivity() {
         android.R.layout.simple_spinner_item, dm.courses.values.toList())
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-//        spinner.adapter = adapterCourses
+        spinnerCourses.adapter = adapterCourses
+
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
